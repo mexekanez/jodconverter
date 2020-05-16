@@ -4,15 +4,15 @@ server:
 spring:
   servlet:
     multipart:
-      max-file-size: 5MB
-      max-request-size: 10MB
+      max-file-size: 25MB
+      max-request-size: 50MB
   application:
     name: JODConverter Sample Rest Api
 
 jodconverter:
   local:
     enabled: true
-    port-numbers: 2002,2003
+    port-numbers: 2002,2003,2004,2005
     format-options:
       html:
         store:
@@ -26,4 +26,4 @@ jodconverter:
 
 logging:
   level:
-    org.jodconverter: debug
+    org.jodconverter: info
